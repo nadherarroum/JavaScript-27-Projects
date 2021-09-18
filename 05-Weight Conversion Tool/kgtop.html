@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 05 | Weight Conversion Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container1">
+        <h1>Weight Converter (Kg To Pounds)</h1>
+        <p>Enter weight value in Kilograms : </p>
+
+        <p>
+            <label for="inputKilograms">Kilograms :</label>
+            <input type="number" id="inputKilograms" placeholder="kilograms" 
+            oninput="weightConverterKg(this.value)" onchange="weightConverterKg(this.value)" />
+        </p>
+
+        <p>Your weight in Pounds is : <span id="outputPounds"></span></p>
+
+    </div>
+    
+    <div id="container2">
+        <h1>Weight Converter (Pounds To Kg)</h1>
+        <p>Enter weight value in Pounds : </p>
+
+        <p>
+            <label for="inputPounds">Pounds :</label>
+            <input type="number" id="inputPounds" placeholder="Pounds" 
+            oninput="weightConverterP(this.value)" onchange="weightConverterP(this.value)" />
+        </p>
+
+        <p>Your weight in Kilograms is : <span id="outputKilograms"></span></p>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
